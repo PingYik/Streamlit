@@ -3,7 +3,7 @@ import numpy as np
 from pyDOE2 import fullfact
 import pandas as pd
 
-st.title("Dr. John's Full-Factorial Design App 1")
+st.title("Dr. Alvin's Full-Factorial Design App 1")
 
 # Define the levels for each factor
 temperatures = [20, 30]
@@ -28,7 +28,7 @@ df = pd.DataFrame(experiment_conditions, columns=['Temperature (°C)', 'Pressure
 # Display the experiment conditions in a table
 st.write("In this example, we have two factors: temperature and pressure.")
 st.write("The full-factorial design includes all possible combinations of these two factors.")
-st.write("Temperature: 20°C & 30°C; Pressure: 100, 200 & 300 PSI")
+st.write("Temperature: 20°C & 30°C; Pressure: 200 & 300 PSI")
 st.table(df)
 
 # Create a download button for the CSV file
